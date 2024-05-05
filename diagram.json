@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "author": "00000019",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -67.2, "left": -187.16, "attrs": {} },
+    { "type": "wokwi-mpu6050", "id": "imu1", "top": -120.98, "left": -16.88, "attrs": {} },
+    { "type": "chip-fake-gps", "id": "chip1", "top": 49.02, "left": 129.6, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "imu1:VCC", "esp:5V", "red", [ "v0" ] ],
+    [ "imu1:SDA", "esp:21", "green", [ "v0" ] ],
+    [ "imu1:GND", "esp:GND.2", "black", [ "v0" ] ],
+    [ "imu1:SCL", "esp:22", "green", [ "v0" ] ],
+    [ "chip1:VCC", "esp:5V", "red", [ "h0" ] ],
+    [ "chip1:GND", "esp:GND.2", "black", [ "v0" ] ],
+    [ "chip1:RX", "esp:17", "orange", [ "h0" ] ],
+    [ "chip1:TX", "esp:16", "purple", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
