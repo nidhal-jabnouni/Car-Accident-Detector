@@ -1,6 +1,8 @@
 # Car Accident Detector
 
 This project is a smart device developed as part of the first semester of RT3.
+![image](https://github.com/nidhal-jabnouni/Car-Accident-Detector/assets/131602576/506375f2-854a-4e19-89fd-7b37b89d3516)
+
 
 To test the code online, you can access it via the following link: [Online Code Test](https://wokwi.com/projects/383650406960215041)
 
